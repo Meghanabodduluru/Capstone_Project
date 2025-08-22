@@ -54,7 +54,7 @@ The analysis depends on two distinct datasets.
 
 * **Data Retrieval:**  
   Downloaded and extracted datasets using GEOparse, then converted them to structured CSV files.  
-  ![Data Retrieval](https://github.com/user-attachments/assets/e5f95cdc-b1db-4b33-936a-7ec09da47f84)  
+  ![Data Retrieval](docs/assets/2.1.png)  
 
 * **Data Cleaning:**  
   Selected only relevant gene expression columns (GSM) and added a `Probe_Category` column.  
@@ -74,27 +74,27 @@ The analysis depends on two distinct datasets.
 
 **i. Mean Survival and Infection Outcome**  
 Non-survivors had higher mean gene expression (~9.5) vs survivors (~6.0). High infection risk patients also showed higher expression (~11 vs 7).  
-![Mean Survival & Infection](https://github.com/user-attachments/assets/6e0cef86-1776-460d-9dc8-c693e09e623c)  
+![Mean Survival & Infection](docs/assets/3.1.png)  
 
 **ii. Mean Expression Across GSM Columns**  
 Distinct expression patterns observed between survivors and non-survivors.  
-![Mean Expression GSM](https://github.com/user-attachments/assets/feab09f4-47e0-47bd-88ce-0eb062bfc90a)  
+![Mean Expression GSM](docs/assets/3.2.png)  
 
 **iii. GSM Expression by Infection Outcome**  
 Clear clustering of low-risk (blue) and high-risk (red) patients.  
-![GSM Infection Outcome](https://github.com/user-attachments/assets/99caff90-7f3c-42e2-ac64-ae842c924d29)  
+![GSM Infection Outcome](docs/assets/3.3.png)  
 
 **iv. Density of Survival & Infection**  
 Dataset-specific expression distributions highlighted differences between survival and infection datasets.  
-![Density Survival & Infection](https://github.com/user-attachments/assets/18f45d88-48c5-4e79-aec1-7daf9b1c10ea)  
+![Density Survival & Infection](docs/assets/3.4.png)  
 
 **v. Correlation Heatmap of GSM Features**  
 High correlation among first 5 GSM features, indicating redundancy.  
-![Correlation Heatmap](https://github.com/user-attachments/assets/dda555d6-7c8b-44c3-b4b8-0c2c6a23a191)  
+![Correlation Heatmap](docs/assets/3.5.png)  
 
 **vi. GSM615096 vs GSM615097 Scatter Plot**  
 Shows strong predictive potential for survival outcomes.  
-![GSM Scatter Plot](https://github.com/user-attachments/assets/d1718bc1-af43-4146-912e-8e6da6d61365)  
+![GSM Scatter Plot](docs/assets/3.6.png)  
 
 ---
 
@@ -117,30 +117,30 @@ Shows strong predictive potential for survival outcomes.
   - Survival: 98.41% accuracy, AUC 0.9991  
   - Treatment: 98.07% accuracy, AUC 0.9988  
   - Infection: 99.39% accuracy, AUC 0.9998  
-![RF Evaluation](https://github.com/user-attachments/assets/555beed8-5240-4d7c-aff6-ac87a73f6416)  
+![RF Evaluation](docs/assets/4.3.1.png)  
 
  **Neural Network Loss & NN Accuracy Curves**  
-![Survival NN](https://github.com/user-attachments/assets/a72f8988-b1cd-4892-b691-765945cab2fe)  
-![Treatment NN](https://github.com/user-attachments/assets/8c9a1237-e9e5-42cd-985c-491d42a53eaa)  
-![Infection NN](https://github.com/user-attachments/assets/964eb237-f4ad-45eb-af60-9d0a366bbda1)  
+![Survival NN](docs/assets/4.3.2.png)  
+![Treatment NN](docs/assets/4.3.3a.png)  
+![Infection NN](docs/assets/4.3.3b.png)  
 
 **NN Performance Comparison**  
-![NN Comparison](https://github.com/user-attachments/assets/8639c715-a781-4319-b7d6-7dc5b6775722)  
+![NN Comparison](docs/assets/4.3.4.png)  
 
 **ROC Curves (Random Forest)**  
-![RF ROC Curves](https://github.com/user-attachments/assets/b6317439-9823-46d7-bd56-81f5d49c8b65)  
+![RF ROC Curves](docs/assets/4.3.5.png)  
 
 **Model Comparison**  
-![RF vs NN Comparison](https://github.com/user-attachments/assets/db5e0f0f-cff1-4c42-b11b-6512dbe777de)  
+![RF vs NN Comparison](docs/assets/4.4.png)  
 
 **SHAP Feature Importance (Survival Outcome)**  
-![SHAP Summary](https://github.com/user-attachments/assets/5ec93798-c73e-4bff-8627-c289ba63e5e9)  
+![SHAP Summary](docs/assets/4.4.1.png)  
 
 ---
 
 ## 5. Gradio Deployment
 Interactive interface to predict outcomes using five gene inputs (GSM615096–GSM615100).  
-![Gradio Interface](https://github.com/user-attachments/assets/1100bc45-1fa5-417a-b5c0-a17e5a49797f)  
+![Gradio Interface](docs/assets/5.png)  
 
 ---
 
