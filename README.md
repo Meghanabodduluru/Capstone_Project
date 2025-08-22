@@ -43,7 +43,13 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 ---
 
 ## 🔹 Approach
-## 1. Data Preprocessing
+## 1.Data Source 
+The analysis depends on two distinct datasets.
+* **GSE25066**: Which has gene expression profiles for breast cancer patients and is employed to predict survival outcomes and treatment responses.
+* **GSE19783**:* Which provides gene expression data prominent to infection risk.
+* Both datasets were downloaded as compressed matrix files from the NCBI GEO repository to ensure data integrity and accessibility for subsequent analysis.
+
+## 2. Data Preprocessing
 **Steps performed:**  
 
 * **Data Retrieval:**  
@@ -64,7 +70,7 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 
 ---
 
-## 2. Exploratory Data Analysis (EDA)
+## 3. Exploratory Data Analysis (EDA)
 
 **i. Mean Survival and Infection Outcome**  
 Non-survivors had higher mean gene expression (~9.5) vs survivors (~6.0). High infection risk patients also showed higher expression (~11 vs 7).  
@@ -92,7 +98,7 @@ Shows strong predictive potential for survival outcomes.
 
 ---
 
-## 3. Model Development & Evaluation
+## 4. Model Development & Evaluation
 
 **Random Forest (RF) Models**  
 - Trained for survival, treatment, and infection outcomes.  
@@ -113,7 +119,7 @@ Shows strong predictive potential for survival outcomes.
   - Infection: 99.39% accuracy, AUC 0.9998  
 ![RF Evaluation](https://github.com/user-attachments/assets/555beed8-5240-4d7c-aff6-ac87a73f6416)  
 
- **Neural Network Loss & Accuracy Curves**  
+ **Neural Network Loss & NN Accuracy Curves**  
 ![Survival NN](https://github.com/user-attachments/assets/a72f8988-b1cd-4892-b691-765945cab2fe)  
 ![Treatment NN](https://github.com/user-attachments/assets/8c9a1237-e9e5-42cd-985c-491d42a53eaa)  
 ![Infection NN](https://github.com/user-attachments/assets/964eb237-f4ad-45eb-af60-9d0a366bbda1)  
@@ -132,13 +138,13 @@ Shows strong predictive potential for survival outcomes.
 
 ---
 
-## 4. Gradio Deployment
+## 5. Gradio Deployment
 Interactive interface to predict outcomes using five gene inputs (GSM615096–GSM615100).  
 ![Gradio Interface](https://github.com/user-attachments/assets/1100bc45-1fa5-417a-b5c0-a17e5a49797f)  
 
 ---
 
-## 5. Key Findings
+## 6. Key Findings
 - RF models outperformed NN, with infection risk achieving **99.39% accuracy**.  
 - SHAP analysis confirmed critical gene features for survival predictions.  
 - EDA validated that survivors have higher gene expression patterns.  
@@ -146,7 +152,7 @@ Interactive interface to predict outcomes using five gene inputs (GSM615096–GS
 
 ---
 
-## 6. Recommendations / Future Work
+## 7. Recommendations / Future Work
 - Use real clinical labels instead of proxy outcomes.  
 - Expand infection dataset for better predictions.  
 - Optimize NN architecture and reduce overfitting.  
@@ -155,7 +161,7 @@ Interactive interface to predict outcomes using five gene inputs (GSM615096–GS
 
 ---
 
-## 7. Conclusion
+## 8. Conclusion
 Random Forest and Neural Network models successfully predicted breast cancer outcomes, with RF models showing **superior performance**. This project highlights how **AI and explainable ML** can assist clinicians in personalized treatment planning.  
 
 
