@@ -8,7 +8,7 @@
 ---
 ## 📖 Project Overview:
 <P>Breast cancer is one of the most common cancers among women worldwide. Early detection and personalized treatment planning are critical for improving patient outcomes.
- Machine learning techniques can help in predicting survival rate and infection risk.</p>
+This project analyzes breast cancer patient data to predict survival, treatment response, and infection risk using gene expression and clinical datasets (GSE datasets). The focus is on deriving actionable insights from complex biomedical data to support clinical decision-making.</p>
 <p>In this project, we used gene expression and clinical datasets (GSE25066 & GSE19783 from NCBI GEO) to predict:
  
 - Survival outcomes
@@ -16,7 +16,7 @@
 - Treatment response
   
 - Infection risk
-We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networks) models, and applied SHAP explainability to identify genetic features most associated with patient outcomes. An interactive Gradio interface was developed to demonstrate real-time predictions. </P>
+We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networks) models, applied SHAP explainability to identify genetic key features most associated with patient outcomes and deployed an interactive Gradio interface for real-time predictions. </P>
 
 
 ---
@@ -24,8 +24,8 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 ## 🔹 Objectives
 - Predict survival, treatment response, and infection risk from high-dimensional gene expression data.  
 - Compare the performance of **Random Forest** and **Neural Network** models.  
-- Use **explainable AI (SHAP values)** to identify important genetic features.  
-- Deploy an **interactive Gradio app** for real-time predictions.
+- Use SHAP values to identify important genetic features.  
+- Deploy an interactive Gradio app for real-time predictions.
 
 ---
 
@@ -47,7 +47,7 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 The analysis depends on two distinct datasets.
 * **GSE25066**: Which has gene expression profiles for breast cancer patients and is employed to predict survival outcomes and treatment responses.
 * **GSE19783**:* Which provides gene expression data prominent to infection risk.
-* Both datasets were downloaded as compressed matrix files from the NCBI GEO repository to ensure data integrity and accessibility for subsequent analysis.
+* Datasets were downloaded from the NCBI GEO repository in compressed format and converted to CSV for analysis.
 
 ## 2. Data Preprocessing
 **Steps performed:**  
@@ -57,11 +57,11 @@ The analysis depends on two distinct datasets.
   ![Data Retrieval](https://github.com/user-attachments/assets/e5f95cdc-b1db-4b33-936a-7ec09da47f84)  
 
 * **Data Cleaning:**  
-  Kept only relevant gene expression columns (GSM) and added a `Probe_Category` column.  
+  Selected only relevant gene expression columns (GSM) and added a `Probe_Category` column.  
   Proxy labels for **Survival_Outcome, Treatment_Outcome, and Infection_Outcome** were created using KMeans clustering.  
 
 * **Normalization & Splitting:**  
-  Standardized the gene expression values using `StandardScaler` (mean=0, std=1). Split datasets 80% for training and 20% for testing.  
+  Standardized the gene expression data using `StandardScaler` (mean=0, std=1). Split datasets 80% for training and 20% for testing.  
   ![Normalization](https://github.com/user-attachments/assets/7d542438-a666-4f1f-9571-7fdd48bd3e80)  
 
 * **Challenges:**  
@@ -177,7 +177,7 @@ Random Forest and Neural Network models successfully predicted breast cancer out
 
 ## 🔹 My Contribution (Meghana Bodduluri)
 - Retrieved and preprocessed GEO datasets into structured formats.  
-- Conducted **EDA** (survival trends, heatmaps, scatter plots).  
+- Conducted **EDA**, visualizations, and correlation analysis(survival trends, heatmaps, scatter plots).
 - Implemented and tuned **Random Forest models**.  
 - Applied **SHAP explainability** to identify predictive features.  
 - Assisted with **Gradio deployment** for interactive model use.
