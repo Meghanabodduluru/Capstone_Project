@@ -13,11 +13,11 @@
 </p>
 <p>In this project, we used gene expression and clinical datasets (GSE25066 & GSE19783 from NCBI GEO) to predict:
 
-Survival outcomes
+- Survival outcomes
 
-Treatment response
+- Treatment response
 
-Infection risk
+- Infection risk
 
 We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networks) models, and applied SHAP explainability to identify genetic features most associated with patient outcomes. An interactive Gradio interface was developed to demonstrate real-time predictions. </P>
 
@@ -43,7 +43,6 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 <p>Version Control: GitHub
 
 
-</P>
 ---
 
 
