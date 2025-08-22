@@ -39,9 +39,7 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 
 ---
 
-
 ## 🔹 Approach
-
 ## 1. Data Preprocessing
 **Steps performed:**  
 
