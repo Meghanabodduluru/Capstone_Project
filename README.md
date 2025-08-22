@@ -45,22 +45,8 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 
 
 </P>
-
+---
 ## 🔹 Approach
-# 🧬 Integrative Analysis of Breast Cancer Outcomes Using Machine Learning
-
-**Term:** Spring 2025  
-**Team:** Purple (Sanjana Kanneganti, Sowmya Bathula, Swetha Nunemunthala, Meghana Bodduluri)  
-**Keywords:** Python, pandas, scikit-learn, TensorFlow, SHAP, Gradio  
-
----
-
-## 📖 Project Overview
-This project predicts **survival, treatment response, and infection risk** in breast cancer patients using gene expression datasets (GSE25066 & GSE19783). We applied machine learning (Random Forest) and deep learning (Neural Networks), along with SHAP explainability, to identify key features and support clinical decision-making.  
-
-**Tech stack:** Python, pandas, scikit-learn, TensorFlow/Keras, SHAP, Gradio, matplotlib, seaborn  
-
----
 
 ## 1. Data Preprocessing
 **Steps performed:**  
