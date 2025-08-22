@@ -10,8 +10,11 @@
 <P>Breast cancer is one of the most common cancers among women worldwide. Early detection and personalized treatment planning are critical for improving patient outcomes.
  Machine learning techniques can help in predicting survival rate and infection risk.</p>
 <p>In this project, we used gene expression and clinical datasets (GSE25066 & GSE19783 from NCBI GEO) to predict:
+ 
 - Survival outcomes
+  
 - Treatment response
+  
 - Infection risk
 We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networks) models, and applied SHAP explainability to identify genetic features most associated with patient outcomes. An interactive Gradio interface was developed to demonstrate real-time predictions. </P>
 
@@ -28,13 +31,13 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 
 ### 🛠️ Technical Design
 
-<p>Languages: Python
-<p>Data Handling: pandas, numpy, GEOparse
-<p>ML/DL Models: scikit-learn (Random Forest), TensorFlow/Keras (Neural Networks)
-<p>Explainability: SHAP
-<p>Visualization: matplotlib, seaborn
-<p>Interface: Gradio
-<p>Version Control: GitHub
+<p>Languages: Python</p>
+<p>Data Handling: pandas, numpy, GEOparse</p>
+<p>ML/DL Models: scikit-learn (Random Forest), TensorFlow/Keras (Neural Networks)</p>
+<p>Explainability: SHAP</p>
+<p>Visualization: matplotlib, seaborn</p>
+<p>Interface: Gradio</p>
+<p>Version Control: GitHub</p>
 
 
 ---
