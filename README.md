@@ -9,16 +9,10 @@
 ## 📖 Project Overview:
 <P>Breast cancer is one of the most common cancers among women worldwide. Early detection and personalized treatment planning are critical for improving patient outcomes.
  Machine learning techniques can help in predicting survival rate and infection risk.</p>
-<p>This project focuses on predicting **survival outcomes, treatment response, and infection risk** in breast cancer patients using gene expression datasets from **NCBI GEO**. By combining exploratory data analysis, machine learning models, and explainability tools, the project demonstrates how AI can support clinical decision-making.
-</p>
 <p>In this project, we used gene expression and clinical datasets (GSE25066 & GSE19783 from NCBI GEO) to predict:
-
 - Survival outcomes
-
 - Treatment response
-
 - Infection risk
-
 We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networks) models, and applied SHAP explainability to identify genetic features most associated with patient outcomes. An interactive Gradio interface was developed to demonstrate real-time predictions. </P>
 
 
