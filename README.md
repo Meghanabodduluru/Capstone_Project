@@ -6,7 +6,6 @@
 **Keywords:** Python, pandas, scikit-learn, TensorFlow, SHAP, Gradio  
 
 ---
-
 ## 📖 Project Overview:
 <P>Breast cancer is one of the most common cancers among women worldwide. Early detection and personalized treatment planning are critical for improving patient outcomes.
  Machine learning techniques can help in predicting survival rate and infection risk.</p>
@@ -46,6 +45,8 @@ We implemented Machine Learning (Random Forest) and Deep Learning (Neural Networ
 
 </P>
 ---
+
+
 ## 🔹 Approach
 
 ## 1. Data Preprocessing
@@ -118,7 +119,7 @@ Shows strong predictive potential for survival outcomes.
   - Infection: 99.39% accuracy, AUC 0.9998  
 ![RF Evaluation](https://github.com/user-attachments/assets/555beed8-5240-4d7c-aff6-ac87a73f6416)  
 
-- **Neural Network Loss & Accuracy Curves**  
+ **Neural Network Loss & Accuracy Curves**  
 ![Survival NN](https://github.com/user-attachments/assets/a72f8988-b1cd-4892-b691-765945cab2fe)  
 ![Treatment NN](https://github.com/user-attachments/assets/8c9a1237-e9e5-42cd-985c-491d42a53eaa)  
 ![Infection NN](https://github.com/user-attachments/assets/964eb237-f4ad-45eb-af60-9d0a366bbda1)  
